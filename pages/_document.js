@@ -4,7 +4,7 @@ export default function Document() {
   const meta = {
     title: "Aaron's Portfolio",
     description: 'sup!!',
-    image: '/images/facebook.jpeg'
+    image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png'
   }
 
   return (
