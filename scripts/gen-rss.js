@@ -3,11 +3,13 @@ const path = require('path')
 const RSS = require('rss')
 const matter = require('gray-matter')
 
+const deploymentUrl = process.env.NEXT_PUBLIC_VERCEL_URL
+
 async function generate() {
   const feed = new RSS({
     title: 'Aaron',
-    site_url: `https://${process.env.VERCEL_URL}`,
-    feed_url: `https://${process.env.VERCEL_URL}/feed.xml`
+    site_url: `https://${deploymentUrl}`,
+    feed_url: `https://${deploymentUrl}/feed.xml`
   })
 
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
