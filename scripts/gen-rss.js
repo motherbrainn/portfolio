@@ -3,15 +3,15 @@ const path = require('path')
 const RSS = require('rss')
 const matter = require('gray-matter')
 
-const deploymentUrl = process.env.NEXT_PUBLIC_VERCEL_URL
+const deploymentUrl = process.env.NEXT_PUBLIC_DOMAIN
 
 async function generate() {
   const feed = new RSS({
-    title: 'Aaron',
-    site_url: `https://${deploymentUrl}`,
-    feed_url: `https://${deploymentUrl}/feed.xml`
+    title: "Aaron's Blog",
+    site_url: `${deploymentUrl}`,
+    feed_url: `${deploymentUrl}/feed.xml`
   })
-
+  console.log(deploymentUrl)
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
   const allPosts = []
   await Promise.all(
