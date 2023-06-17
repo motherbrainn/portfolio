@@ -11,7 +11,7 @@ async function generate() {
     site_url: `${deploymentUrl}`,
     feed_url: `${deploymentUrl}/feed.xml`
   })
-  console.log(deploymentUrl)
+
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
   const allPosts = []
   await Promise.all(
