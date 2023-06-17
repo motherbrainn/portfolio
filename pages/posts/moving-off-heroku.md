@@ -10,17 +10,15 @@ import Image from 'next/image'
 
 # Heroku isn't free anymore, how else can I deploy my React/Node app? :(
 
-I originally posted this on [Medium ↗ ](https://medium.com/@aaronnnnn/heroku-isnt-free-anymore-how-else-can-i-deploy-my-react-node-app-b6ba3afb67ba) where it receieved one 'clap' lol.....
-<Image
-  src="/images/heroku3.jpeg"
-  alt="Photo"
-  width={273}
-  height={123}
-  priority
-  className="next-image"
-/>
-
----
+> I originally posted this on [Medium ↗ ](https://medium.com/@aaronnnnn/heroku-isnt-free-anymore-how-else-can-i-deploy-my-react-node-app-b6ba3afb67ba) where it receieved one 'clap' lol.....
+> <Image
+>   src="/images/heroku3.jpeg"
+>   alt="Photo"
+>   width={273}
+>   height={123}
+>   priority
+>   className="next-image"
+> />
 
 ## _Important Information About Heroku Free Products_
 
